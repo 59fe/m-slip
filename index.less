@@ -1,0 +1,79 @@
+@import "~m-base/base/mixins";
+@import "~m-base/base/variables";
+
+@import "@ali/mask-m/lib/index.less";
+// Slip
+.slip-wrap {
+    .mask {
+        opacity: 0;
+        visibility: hidden;
+        &.dialog-overlay-visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.slip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10400;
+    background: #fff;
+    box-sizing: border-box;
+    display: none;
+    .scrollable();
+    transition-property: transform;
+    transform: translate3d(0,100%,0);
+    &.dialog-in, &.dialog-out {
+        transition-duration: @transition-duration;
+    }
+    &.dialog-in {
+        &, &.dir-top, &.dir-left, &.dir-right {
+            transform: translate3d( 0, 0, 0);
+        }
+    }
+    &.dialog-out {
+        transform: translate3d( 0, 100%, 0);
+    }
+    &.dir-top, &.dir-top.dialog-out{
+        transform: translate3d( 0, -100%, 0);
+    }
+    &.dir-left, &.dir-left.dialog-out{
+        transform: translate3d( -100%, 0, 0);
+    }
+    &.dir-right, &.dir-right.dialog-out{
+        transform: translate3d( 100%, 0, 0);
+    }
+
+    .slip-title {
+        position: relative;
+        font-weight: 500;
+        .font-size(@font-size-subhead);
+        .height(@S12);
+        .line-height(@S12);
+        color: @N2_4;
+        border: 1px solid @N1_7;
+        .padding-left(@S3);
+        .close-slip {
+            color: #666;
+            margin-top: -1px;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: .2px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            .width(@S11);
+        }
+        h2 {
+            margin: 0;
+        }
+    }
+    .slip-content {
+        .padding(@S3);
+    }
+}
