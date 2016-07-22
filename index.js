@@ -24,11 +24,11 @@ var _triggerM = require('r-trigger');
 
 var _triggerM2 = _interopRequireDefault(_triggerM);
 
-var _maskM = require('@ali/mask-m');
+var _maskM = require('m-mask');
 
 var _maskM2 = _interopRequireDefault(_maskM);
 
-var _util = require('m-base//js/util');
+var _util = require('m-base/js/util');
 
 var _util2 = _interopRequireDefault(_util);
 

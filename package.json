@@ -21,19 +21,16 @@
       "email": "itaofe@gmail.com"
     }
   ],
+  "bugs": {
+    "url": "https://github.com/59fe/m-slip/issues"
+  },
   "readmeFilename": "README.md",
   "dependencies": {
     "react": "~15.2.0",
     "react-dom": "~15.2.0",
     "m-base": "^1.0.0",
-    "classnames": "~2.2.3"
-  },
-  "dependencies": {
-    "@ali/msui-core": "~1.0.4",
-    "@ali/button-m": "~1.0.2",
-    "@ali/icon-m": "~1.0.0",
-    "@ali/mask-m": "~1.0.0",
-    "@ali/trigger-m": "~1.0.1",
+    "m-mask": "^1.0.0",
+    "r-trigger": "^1.0.0",
     "classnames": "~2.2.3"
   },
   "keywords": [
