@@ -117,7 +117,7 @@ var Slip = function (_React$Component) {
                 props.hasHeader ? _react2.default.createElement(
                     'header',
                     { className: this.slipTitleCls },
-                    hasCross ? _react2.default.createElement('i', { className: 'close-slip' }, '&times;') : false,
+                    hasCross ? _react2.default.createElement('i', { className: 'close-slip' }, String.fromCharCode(215)) : false,
                     _react2.default.createElement(
                         'h2',
                         null,
