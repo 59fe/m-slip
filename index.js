@@ -113,7 +113,7 @@ var Slip = function (_React$Component) {
             { className: 'slip-wrap' },
             _react2.default.createElement(
                 'div',
-                { className: slipCls, id: this.id, onTouchTap: this.handleSlipClick.bind(this), style: slipStyle },
+                { className: slipCls, id: this.id, onClick: this.handleSlipClick.bind(this), style: slipStyle },
                 props.hasHeader ? _react2.default.createElement(
                     'header',
                     { className: this.slipTitleCls },
@@ -232,7 +232,7 @@ var Slip = function (_React$Component) {
     Slip.prototype.render = function render() {
         return _react2.default.createElement(
             _triggerM2.default,
-            { onTouchTap: this.handleClick.bind(this) },
+            { onClick: this.handleClick.bind(this) },
             this.props.children
         );
     };
