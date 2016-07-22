@@ -1,0 +1,44 @@
+{
+  "name": "m-slip",
+  "version": "1.0.0",
+  "description": "m-slip 滑片组件,侧边栏、操作表、Popup等等很多场景。可以指定滑入的距离、方向",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/59fe/m-slip.git"
+  },
+  "homepage": "https://github.com/59fe/m-slip",
+  "author": {
+    "name": "半边",
+    "email": "itaofe@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "半边",
+      "email": "itaofe@gmail.com"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "react": "~15.2.0",
+    "m-base": "^1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "dependencies": {
+    "@ali/msui-core": "~1.0.4",
+    "@ali/button-m": "~1.0.2",
+    "@ali/icon-m": "~1.0.0",
+    "@ali/mask-m": "~1.0.0",
+    "@ali/trigger-m": "~1.0.1",
+    "classnames": "~2.2.3"
+  },
+  "keywords": [
+    "slip",
+    "react",
+    "mobile"
+  ],
+  "license": "Apache-2.0"
+}
