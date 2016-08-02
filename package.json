@@ -1,6 +1,6 @@
 {
   "name": "m-slip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "m-slip 滑片组件,侧边栏、操作表、Popup等等很多场景。可以指定滑入的距离、方向",
   "main": "index.js",
   "scripts": {
