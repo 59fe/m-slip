@@ -227,7 +227,7 @@ var Slip = function (_React$Component) {
                 open: !opened,
                 transitionStart: true
             });
-        }, 16);
+        }, 50);
     };
 
     Slip.prototype.render = function render() {
