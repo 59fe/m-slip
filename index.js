@@ -69,7 +69,7 @@ var Slip = function (_React$Component) {
 
 
     Slip.prototype.handleSlipTransition = function handleSlipTransition(e) {
-        if (e.propertyName != 'transform') return;
+        if (e.propertyName != 'transform' && e.propertyName != '-webkit-transform') return;
         var ifNowOpened = this.state.opened;
 
         // callback trigger
