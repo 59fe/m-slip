@@ -171,6 +171,7 @@ var Slip = function (_React$Component) {
                 right: client.clientWidth * restPercent
             };
             this.slipStyle.transform = 'translate3d(' + translateMap[dir] + ')';
+            this.slipStyle.webkitTransform = 'translate3d(' + translateMap[dir] + ')';
             //TODO paddingxxx的值，正负判断,100% - translate 值
             this.slipStyle['padding' + dirSuffixMap[dir]] = paddingMap[dir];
         }
