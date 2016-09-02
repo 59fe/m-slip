@@ -69,9 +69,13 @@ var Slip = function (_React$Component) {
 
 
     Slip.prototype.handleSlipTransition = function handleSlipTransition(e) {
+        // 不是trasform 动画就return，注意必须加-webkit-判断的类型，有些机型的坑。
+        // 并且贝塞尔曲线动画也会被算作trasform形变动画 cubic-bezier
         if (e.propertyName != 'transform' && e.propertyName != '-webkit-transform') return;
-        var ifNowOpened = this.state.opened;
+        // 判断动画的来源元素，避免Slip里的DOM 动画影响了Slip的状态
+        if (e.currentTarget !== e.target) return;
 
+        var ifNowOpened = this.state.opened;
         // callback trigger
         if (ifNowOpened) {
             this.props.onClosed.call(this);
