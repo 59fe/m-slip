@@ -13,6 +13,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _PropTypes = require('prop-types');
+
+var _PropTypes2 = _interopRequireDefault(_PropTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -260,9 +264,9 @@ Slip.hide = function () {
 };
 
 Slip.propTypes = {
-    content: _react.PropTypes.element.isRequired,
-    titleCenter: _react.PropTypes.bool,
-    hasHeader: _react.PropTypes.bool,
+    content:     _PropTypes2.default.element.isRequired,
+    titleCenter: _PropTypes2.default.bool,
+    hasHeader:   _PropTypes2.default.bool,
     depth: function depth(props, propName, componentName) {
         var val = props[propName];
         if (isNaN(+val)) return new Error('depth参数"' + val + '"错误：请传入合法的数字字符串');
@@ -270,11 +274,11 @@ Slip.propTypes = {
             return new Error('depth参数"' + val + '"错误：参数为百分比值，请保证在0~100区间');
         }
     },
-    dir: _react.PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
-    onOpen: _react.PropTypes.func,
-    onOpened: _react.PropTypes.func,
-    onClose: _react.PropTypes.func,
-    onClosed: _react.PropTypes.func
+    dir:      _PropTypes2.default.oneOf(['top', 'bottom', 'left', 'right']),
+    onOpen:   _PropTypes2.default.func,
+    onOpened: _PropTypes2.default.func,
+    onClose:  _PropTypes2.default.func,
+    onClosed: _PropTypes2.default.func
 };
 Slip.defaultProps = {
     // 标题是否要居中
